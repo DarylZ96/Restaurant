@@ -12,6 +12,15 @@
 		FBB74A3E21B5ACFE000C14AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBB74A3C21B5ACFE000C14AE /* Main.storyboard */; };
 		FBB74A4021B5ACFF000C14AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBB74A3F21B5ACFF000C14AE /* Assets.xcassets */; };
 		FBB74A4321B5ACFF000C14AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBB74A4121B5ACFF000C14AE /* LaunchScreen.storyboard */; };
+		FBB74A4B21B5BFFE000C14AE /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB74A4A21B5BFFE000C14AE /* CategoryTableViewController.swift */; };
+		FBB74A4D21B5C049000C14AE /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB74A4C21B5C049000C14AE /* MenuTableViewController.swift */; };
+		FBB74A4F21B5C05D000C14AE /* OrderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB74A4E21B5C05D000C14AE /* OrderTableViewController.swift */; };
+		FBB74A5121B5C5EA000C14AE /* MenuItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB74A5021B5C5EA000C14AE /* MenuItemDetailViewController.swift */; };
+		FBB74A5321B665AF000C14AE /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB74A5221B665AF000C14AE /* MenuItem.swift */; };
+		FBB74A5521B666D9000C14AE /* IntermediaryModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB74A5421B666D9000C14AE /* IntermediaryModels.swift */; };
+		FBB74A5721B66759000C14AE /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB74A5621B66759000C14AE /* Order.swift */; };
+		FBB74A5921B66B18000C14AE /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB74A5821B66B18000C14AE /* MenuController.swift */; };
+		FBDEDF2B21B6AC89003F6201 /* OrderConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDEDF2A21B6AC89003F6201 /* OrderConfirmationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +31,15 @@
 		FBB74A3F21B5ACFF000C14AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBB74A4221B5ACFF000C14AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FBB74A4421B5ACFF000C14AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBB74A4A21B5BFFE000C14AE /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
+		FBB74A4C21B5C049000C14AE /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		FBB74A4E21B5C05D000C14AE /* OrderTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewController.swift; sourceTree = "<group>"; };
+		FBB74A5021B5C5EA000C14AE /* MenuItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemDetailViewController.swift; sourceTree = "<group>"; };
+		FBB74A5221B665AF000C14AE /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		FBB74A5421B666D9000C14AE /* IntermediaryModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntermediaryModels.swift; sourceTree = "<group>"; };
+		FBB74A5621B66759000C14AE /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		FBB74A5821B66B18000C14AE /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
+		FBDEDF2A21B6AC89003F6201 /* OrderConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderConfirmationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +75,15 @@
 				FBB74A3821B5ACFE000C14AE /* AppDelegate.swift */,
 				FBB74A3A21B5ACFE000C14AE /* ViewController.swift */,
 				FBB74A3C21B5ACFE000C14AE /* Main.storyboard */,
+				FBB74A5221B665AF000C14AE /* MenuItem.swift */,
+				FBB74A5421B666D9000C14AE /* IntermediaryModels.swift */,
+				FBB74A5621B66759000C14AE /* Order.swift */,
+				FBDEDF2A21B6AC89003F6201 /* OrderConfirmationViewController.swift */,
+				FBB74A5821B66B18000C14AE /* MenuController.swift */,
+				FBB74A5021B5C5EA000C14AE /* MenuItemDetailViewController.swift */,
+				FBB74A4A21B5BFFE000C14AE /* CategoryTableViewController.swift */,
+				FBB74A4C21B5C049000C14AE /* MenuTableViewController.swift */,
+				FBB74A4E21B5C05D000C14AE /* OrderTableViewController.swift */,
 				FBB74A3F21B5ACFF000C14AE /* Assets.xcassets */,
 				FBB74A4121B5ACFF000C14AE /* LaunchScreen.storyboard */,
 				FBB74A4421B5ACFF000C14AE /* Info.plist */,
@@ -135,8 +162,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBB74A5921B66B18000C14AE /* MenuController.swift in Sources */,
+				FBB74A5321B665AF000C14AE /* MenuItem.swift in Sources */,
+				FBB74A4D21B5C049000C14AE /* MenuTableViewController.swift in Sources */,
+				FBDEDF2B21B6AC89003F6201 /* OrderConfirmationViewController.swift in Sources */,
+				FBB74A5121B5C5EA000C14AE /* MenuItemDetailViewController.swift in Sources */,
+				FBB74A5721B66759000C14AE /* Order.swift in Sources */,
+				FBB74A4F21B5C05D000C14AE /* OrderTableViewController.swift in Sources */,
+				FBB74A5521B666D9000C14AE /* IntermediaryModels.swift in Sources */,
 				FBB74A3B21B5ACFE000C14AE /* ViewController.swift in Sources */,
 				FBB74A3921B5ACFE000C14AE /* AppDelegate.swift in Sources */,
+				FBB74A4B21B5BFFE000C14AE /* CategoryTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
