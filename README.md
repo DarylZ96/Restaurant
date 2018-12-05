@@ -11,6 +11,7 @@ Some extra features:
 - Local images for the categories
 - Resized (100x100) images
 - Tabbar icons
+- Empty order alert
 
 
 
