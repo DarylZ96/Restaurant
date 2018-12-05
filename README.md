@@ -18,21 +18,21 @@ Some extra features:
 
 ![ToDoList](/Restaurant/doc/CategoryScreenL.png)
 
-![ToDoList](/doc/MenuScreen.png)
+![ToDoList](/Restaurant/doc/MenuScreen.png)
 
-![ToDoList](/doc/MenuScreenL.png)
+![ToDoList](/Restaurant/doc/MenuScreenL.png)
 
-![ToDoList](/doc/DetailScreen.png)
+![ToDoList](/Restaurant/doc/DetailScreen.png)
 
-![ToDoList](/doc/DetailScreenL.png)
+![ToDoList](/Restaurant/doc/DetailScreenL.png)
 
-![ToDoList](/doc/OrderScreen.png)
+![ToDoList](/Restaurant/doc/OrderScreen.png)
 
-![ToDoList](/doc/OrderScreenL.png)
+![ToDoList](/Restaurant/doc/OrderScreenL.png)
 
-![ToDoList](/doc/Confirmation.png)
+![ToDoList](/Restaurant/doc/Confirmation.png)
 
-![ToDoList](/doc/WaitTime.png)
+![ToDoList](/Restaurant/doc/WaitTime.png)
 
 
 
