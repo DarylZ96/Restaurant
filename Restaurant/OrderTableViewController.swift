@@ -11,7 +11,7 @@ import UIKit
 class OrderTableViewController: UITableViewController {
     
     var orderMinutes = 0
-    
+    var menuItems = [MenuItem]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,11 +20,6 @@ class OrderTableViewController: UITableViewController {
         
         NotificationCenter.default.addObserver(tableView, selector: #selector(UITableView.reloadData), name: MenuController.orderUpdatedNotification, object: nil)
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     // MARK: - Table view data source
@@ -34,12 +29,16 @@ class OrderTableViewController: UITableViewController {
         return 1
     }
 
+    // number of rows in menu
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return MenuController.shared.order.menuItems.count
     }
 
 
+    // Dequeue the right cells
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "OrderCellIdentifier", for: indexPath)
 
@@ -49,13 +48,20 @@ class OrderTableViewController: UITableViewController {
         return cell
     }
     
+    // enable editing functions
+    
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return true
     }
     
+    
+    // set the height of the cell to 100
+    
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
     }
+    
+    // Append editing functionalities
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
@@ -64,6 +70,7 @@ class OrderTableViewController: UITableViewController {
     }
 
     
+    // configure the OrderTable cells with the labels and images.
     
     func configure(_ cell: UITableViewCell, forItemAt indexPath: IndexPath) {
         
@@ -97,6 +104,8 @@ class OrderTableViewController: UITableViewController {
         
     }
     
+    // Determine wheter the orderlist contains items and display order alert. When >0 order total, upload the order.
+    
     @IBAction func submitTapped(_ sender: Any) {
         
         let orderTotal = MenuController.shared.order.menuItems.reduce(0.0)
@@ -104,17 +113,31 @@ class OrderTableViewController: UITableViewController {
             return result + menuItem.price
         }
         let formattedOrder = String(format: "$%.2f", orderTotal)
-
-        let alert = UIAlertController(title: "Confirm Order", message: "You are about to submit your order with a total of \(formattedOrder)", preferredStyle: .alert)
         
+        if orderTotal == 0.00 {
+            
+            let invalidalert = UIAlertController(title: "Empty Order", message: "Please add some food to your order", preferredStyle: .alert)
+            
+            invalidalert.addAction(UIAlertAction(title: "OK",style: .cancel, handler: nil))
+            present(invalidalert, animated: true, completion: nil)
+        
+        }
+        else {
+        
+            let alert = UIAlertController(title: "Confirm Order", message: "You are about to submit your order with a total of \(formattedOrder)", preferredStyle: .alert)
+            
             alert.addAction(UIAlertAction(title: "Submit",style: .default) { action in
                 self.uploadOrder()
                 
             })
             alert.addAction(UIAlertAction(title: "Cancel",style: .cancel, handler: nil))
             present(alert, animated: true, completion: nil)
-    }
+            }
+            
+            
+        }
 
+    // upload the order and order minutes
     
     func uploadOrder() {
         let menuIds = MenuController.shared.order.menuItems.map { $0.id }
@@ -129,6 +152,8 @@ class OrderTableViewController: UITableViewController {
         }
     }
     
+    // Send the order minutes to the OrderConfirmation
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ConfirmationSegue" {
             
@@ -136,15 +161,19 @@ class OrderTableViewController: UITableViewController {
             
             orderConfirmationViewController.minutes = orderMinutes
         }
+        
     }
     
-
+    // Unwind when dismiss button is pressed
     @IBAction func unwindToOrderList(segue: UIStoryboardSegue){
         if segue.identifier == "DismissConfirmation" {
             MenuController.shared.order.menuItems.removeAll()
         }
         
+        
     }
+    
+   
     
     
     /*

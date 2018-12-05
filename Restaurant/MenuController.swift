@@ -48,7 +48,7 @@ class MenuController {
     }
     
     
-     /// Execute GET request from /menu with query parameter — category name
+     /// Execute GET request from menu with query parameter — category name
     
     func fetchMenuItems(forCategory categoryName: String, completion: @escaping ([MenuItem]?) -> Void) {
         
@@ -101,6 +101,8 @@ class MenuController {
         task.resume()
         
     }
+    
+    // fetch the right image
     
     func fetchImage(url: URL, completion: @escaping (UIImage?) ->
     Void) {

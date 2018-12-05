@@ -47,6 +47,8 @@ class MenuItemDetailViewController: UIViewController {
         
     }
 
+    // shape the order button and add the item to the order
+    
     @IBAction func addToOrderButtonTapped(_ sender: Any) {
         
         UIView.animate(withDuration: 0.3) {
