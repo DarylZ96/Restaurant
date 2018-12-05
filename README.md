@@ -14,9 +14,9 @@ Some extra features:
 
 
 
-![ToDoList](/doc/CategoryScreen.png)
+![ToDoList](/Restaurant/doc/CategoryScreen.png)
 
-![ToDoList](/doc/CategoryScreenL.png)
+![ToDoList](/Restaurant/doc/CategoryScreenL.png)
 
 ![ToDoList](/doc/MenuScreen.png)
 
