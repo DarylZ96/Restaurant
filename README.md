@@ -11,8 +11,9 @@ Some extra features:
 - Local images for the categories
 - Tabbar icons
 - Empty order alert
+- Resized (100x100) images in categories, menu and order screen
 
-
+### Screenshots in chronological order
 
 ![ToDoList](/Restaurant/doc/CategoryScreen.png) ![ToDoList](/Restaurant/doc/MenuScreen.png) ![ToDoList](/Restaurant/doc/DetailScreen.png)![ToDoList](/Restaurant/doc/OrderScreen.png) ![ToDoList](/Restaurant/doc/Confirmation.png) ![ToDoList](/Restaurant/doc/WaitTime.png)
 
