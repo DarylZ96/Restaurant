@@ -14,9 +14,7 @@ Some extra features:
 
 
 
-![ToDoList](/Restaurant/doc/CategoryScreen.png) ![ToDoList](/Restaurant/doc/MenuScreen.png) ![ToDoList](/Restaurant/doc/DetailScreen.png)
-
-![ToDoList](/Restaurant/doc/OrderScreen.png) ![ToDoList](/Restaurant/doc/Confirmation.png) ![ToDoList](/Restaurant/doc/WaitTime.png)
+![ToDoList](/Restaurant/doc/CategoryScreen.png) ![ToDoList](/Restaurant/doc/MenuScreen.png) ![ToDoList](/Restaurant/doc/DetailScreen.png)![ToDoList](/Restaurant/doc/OrderScreen.png) ![ToDoList](/Restaurant/doc/Confirmation.png) ![ToDoList](/Restaurant/doc/WaitTime.png)
 
 ![ToDoList](/Restaurant/doc/CategoryScreenL.png)
 ![ToDoList](/Restaurant/doc/MenuScreenL.png)
