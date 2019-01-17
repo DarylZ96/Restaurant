@@ -1,7 +1,7 @@
 # Restaurant
 
 
-### The guided project of week 5.
+### The guided project of week 6.
 
 The restaurant app will present you all types of food from the menu. First you will select a category, and then you are able to select your favorite food and view the deatails.After confirming your order the total price and waiting time
 will be presented to the user.
