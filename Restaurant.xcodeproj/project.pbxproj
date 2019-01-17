@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		FBB74A3921B5ACFE000C14AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB74A3821B5ACFE000C14AE /* AppDelegate.swift */; };
-		FBB74A3B21B5ACFE000C14AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB74A3A21B5ACFE000C14AE /* ViewController.swift */; };
 		FBB74A3E21B5ACFE000C14AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBB74A3C21B5ACFE000C14AE /* Main.storyboard */; };
 		FBB74A4021B5ACFF000C14AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBB74A3F21B5ACFF000C14AE /* Assets.xcassets */; };
 		FBB74A4321B5ACFF000C14AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBB74A4121B5ACFF000C14AE /* LaunchScreen.storyboard */; };
@@ -26,7 +25,6 @@
 /* Begin PBXFileReference section */
 		FBB74A3521B5ACFE000C14AE /* Restaurant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Restaurant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBB74A3821B5ACFE000C14AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FBB74A3A21B5ACFE000C14AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FBB74A3D21B5ACFE000C14AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FBB74A3F21B5ACFF000C14AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBB74A4221B5ACFF000C14AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -73,7 +71,6 @@
 			isa = PBXGroup;
 			children = (
 				FBB74A3821B5ACFE000C14AE /* AppDelegate.swift */,
-				FBB74A3A21B5ACFE000C14AE /* ViewController.swift */,
 				FBB74A3C21B5ACFE000C14AE /* Main.storyboard */,
 				FBB74A5221B665AF000C14AE /* MenuItem.swift */,
 				FBB74A5421B666D9000C14AE /* IntermediaryModels.swift */,
@@ -170,7 +167,6 @@
 				FBB74A5721B66759000C14AE /* Order.swift in Sources */,
 				FBB74A4F21B5C05D000C14AE /* OrderTableViewController.swift in Sources */,
 				FBB74A5521B666D9000C14AE /* IntermediaryModels.swift in Sources */,
-				FBB74A3B21B5ACFE000C14AE /* ViewController.swift in Sources */,
 				FBB74A3921B5ACFE000C14AE /* AppDelegate.swift in Sources */,
 				FBB74A4B21B5BFFE000C14AE /* CategoryTableViewController.swift in Sources */,
 			);
